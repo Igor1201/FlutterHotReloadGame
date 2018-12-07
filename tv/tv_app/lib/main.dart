@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import "dart:io";
 import "monitor_widget.dart";
+import 'package:flutter/foundation.dart' show debugDefaultTargetPlatformOverride;
 
 void main()
 {
+  debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
 	runApp(new MonitorApp());
 }
 
